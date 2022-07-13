@@ -5,15 +5,12 @@
     <link rel="icon" type="image/png" href="log512.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web for barça fans"
-    />
+    <meta name="description" content="Web for barça fans" />
     <link rel="apple-touch-icon" href="log512.png" />
     <link rel="manifest" href="manifest.json" />
-    <title>Barcelona App</title>
+    <title>Barcelona App|| Offline</title>
     <style>
-      *{
+      * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -22,6 +19,7 @@
         width: 100vw;
         height: 100vh;
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         background-image: url(assets/fcb.jpg);
@@ -31,19 +29,392 @@
         padding: 0;
         box-sizing: border-box;
       }
-      h1 {
+      h1,
+      h2 {
         text-align: center;
-        color:  #edbb00;
+        color: #edbb00;
         font-weight: 900;
+        position: absolute;
+        top: 0;
+        z-index: 10;
+      }
+      h2 {
+        top: 5vh;
+        left: 0;
+      }
+      /*
+      colores
+      amarrillo gold{
+      rgb: 
+      (237,187,0)
+      hex:
+      #edbb00
+      }
+      rojo{
+      rgb: 
+      (168,19,62)
+      hex:
+      #a50044
+      }
+      azul{ 
+      rgb: 
+      (0,77,152)
+      hex:
+      #004d98
+      }
+      amarillo{
+      rgb: 
+      (255,237,2)
+      hex: 
+      #ffed02
+      }
+      */
+      canvas {
+        height: 85vh;
+        width: 100vw;
+        background-color: wheat;
+        position: absolute;
+        top: 0%;
       }
     </style>
   </head>
   <body>
     <div id="root">
-        <h1>
-          No tienes red :(
-        </h1>
-        <img src="assets/fcb.jpg" alt="barcelona">
+      <h1>No tienes red :(</h1>
+      <h2>Pulsa en la pantalla para jugar</h2>
+      <canvas id="canvas"> </canvas>
     </div>
+    <script>
+      document.addEventListener("mousemove", (e) => {
+      let px = e.clientX /6;
+      let py = e.clientY /6;
+
+      console.log(py);
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+
+      function fondoR() {
+        ctx.fillStyle = "#a50044";
+        ctx.fillRect(0, 0, 300, 25);
+        ctx.fillRect(0, 50, 300, 25);
+        ctx.fillRect(0, 100, 300, 25);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "#004d98";
+        ctx.fillRect(0, 25, 300, 25);
+        ctx.fillRect(0, 75, 300, 25);
+        ctx.fillRect(0, 125, 300, 25);
+        ctx.fill();
+      }
+
+      function cabeza(x, y) {
+        //x=20,y=75
+        ctx.beginPath();
+        ctx.fillStyle = "#edbb00";
+        ctx.arc(x, y, 10, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      function brazos(px, py) {
+        let x = px + 10;
+        let y = py + 5;
+        let dist = 20;
+        let v = y + dist;
+
+        ctx.beginPath();
+        ctx.strokeStyle = "#edbb00";
+        ctx.arc(x, y, 3, Math.PI, 0);
+        ctx.stroke();
+        ctx.fillStyle = "#ffed02";
+        ctx.arc(x, y, 3, Math.PI, 0);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = "#edbb00";
+        ctx.arc(x, v, 3, 0, Math.PI);
+        ctx.stroke();
+        ctx.fillStyle = "#ffed02";
+        ctx.arc(x, v, 3, 0, Math.PI);
+        ctx.fill();
+      }
+
+      function manos(x, px, py, dist) {
+        let borde = "#000";
+        let color = "#edbb00";
+        let off = 20;
+        let y = py + 5;
+        let j = -x;
+        let h = 10;
+        x = j + px;
+
+        ctx.beginPath();
+        ctx.strokeStyle = borde;
+        ctx.arc(x + off - h, y, 2, Math.PI * 2, Math.PI * 0);
+        ctx.stroke();
+        ctx.fillStyle = color;
+        ctx.arc(x + off - h, y, 2, Math.PI * 2, 0);
+        ctx.fill();
+        let v = y + dist;
+        ctx.beginPath();
+        ctx.strokeStyle = borde;
+        ctx.arc(-j + px + off - h, v, 2, Math.PI * 2, 0);
+        ctx.stroke();
+        ctx.fillStyle = color;
+        ctx.arc(-j + px + off - h, v, 2, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      function pies(x, px, py, dist) {
+        ctx.beginPath();
+        let y = py + 12;
+        let borde = "#fff";
+        let color = "#000";
+        let v = y + dist;
+        let off = 3.5;
+        let h = 10;
+        let offs = 26;
+        let j = -x;
+        x = j;
+
+        ctx.fillStyle = borde;
+        ctx.fillRect(x + px + offs - 0.4 - h, y - off, 1, 7);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = borde;
+        ctx.arc(x + px + offs - h, y, 3, Math.PI * 1.5, Math.PI * 0.5);
+        ctx.stroke();
+        ctx.fillStyle = color;
+        ctx.arc(x + px + offs - h, y, 3, Math.PI * 1.5, Math.PI * 0.5);
+        ctx.fill();
+        ctx.beginPath();
+
+        ctx.beginPath();
+        ctx.fillStyle = borde;
+        ctx.fillRect(-x + px + offs - 0.4 - h, v - off, 1, 7);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.strokeStyle = borde;
+        ctx.arc(-x + px + offs - h, v, 3, Math.PI * 1.5, Math.PI * 0.5);
+        ctx.stroke();
+        ctx.fillStyle = color;
+        ctx.arc(-x + px + offs - h, v, 3, Math.PI * 1.5, Math.PI * 0.5);
+        ctx.fill();
+      }
+      function ojos(px, py) {
+        let x = px + 17;
+        let y = py + 11;
+        let dist = 8;
+        let v = y + dist;
+
+        ctx.beginPath();
+        ctx.strokeStyle = "#000000";
+        ctx.arc(x, y, 1, 0, Math.PI * 2);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle = "#000000";
+        ctx.arc(x, v, 1, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+      function boca(px, py) {
+        let x = px + 18;
+        let off = 0;
+        let y = py + 15;
+
+        ctx.beginPath();
+        ctx.strokeStyle = "#000000";
+        ctx.rect(x + off, y, 1, 0);
+        ctx.stroke();
+      }
+      function balon(off, px, py) {
+        let x = px + 26;
+        let y = py + 15;
+        let dist;
+        let rad = 6 * off;
+        let color;
+
+        ctx.beginPath();
+        ctx.fillStyle = "#fff";
+        ctx.arc(x, y, rad, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "#000";
+        ctx.arc(x, y, rad / 2, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "#f00";
+        ctx.arc(x, y - rad, rad / 3, Math.PI * 2, Math.PI);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "#f00";
+        ctx.arc(x, y + rad, rad / 3, Math.PI, Math.PI * 2);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "#f00";
+        ctx.arc(x - rad, y, rad / 3, Math.PI * 1.5, Math.PI * 0.5);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "#f00";
+        ctx.arc(x + rad, y, rad / 3, Math.PI * 0.5, Math.PI * 1.5);
+        ctx.fill();
+      }
+
+      let x = px + 10;
+      let y = py + 15;
+      let v = 1;
+      let score = 0;
+      let bef = 0;
+
+      function texto(score) {
+        ctx.beginPath();
+        ctx.font = "50px";
+        ctx.strokeStyle = "#edbb00";
+        ctx.strokeText(` ${score} toques`, 200, 25);
+        ctx.stroke();
+      }
+      let gameOver = false;
+      let etama = 10;
+      let ewidth = etama;
+      let eheight = etama;
+      let ex = 0;
+      let ey = 10;
+
+      let ytama = 20;
+      let ywidth = ytama;
+      let yheight = ytama;
+      let yx = 0;
+      let yy = 100;
+
+      
+      function enemigo(cw, ch, px, py, go, tama, width, height, x, ey) {
+        let y = ey;
+
+        ctx.beginPath();
+        ctx.fillStyle = "orange";
+        ctx.fillRect(x, y, width, height);
+
+        ctx.beginPath();
+        ctx.strokeStyle = "#808080";
+        ctx.arc(x + width / 2, y + height / 2, width / 3, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.fillStyle = "#000";
+        ctx.arc(x + width / 2, y + height / 2, width / 6, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        v += 7;
+        let sin = 2 * Math.sin(v / 100);
+        let algo = 1 + Math.abs(sin / 2);
+        fondoR();
+        manos(sin, px, py, 20);
+        pies(sin, px, py, 7);
+        brazos(px, py);
+        if (algo <= 1.3) {
+          balon(algo, px, py);
+          cabeza(x, y);
+          ojos(px, py);
+          boca(px, py);
+        } else {
+          cabeza(x, y);
+
+          ojos(px, py);
+          boca(px, py);
+          balon(algo, px, py);
+        }
+        if (algo >= 1.99) {
+          score++;
+          bef = score;
+          algo -= 0.1;
+        }
+        texto(Math.round(bef / 4));
+
+        if (ex > canvas.width) {
+          ex = 0 - ewidth;
+          ey = Math.random() * canvas.height;
+        } else if (ey + eheight > canvas.height) {
+          ey = Math.random() * canvas.height;
+        }
+        if (yx > canvas.width) {
+          yx = 0 - ywidth;
+          yy = (Math.random() * canvas.height)+ ytama;
+        } else if (yy + yheight > canvas.height) {
+          yy = (Math.random() * canvas.height) + ytama;
+        }
+
+        if (
+          py + 20 > ey &&
+          px + 20 > ex &&
+          py < ey + etama &&
+          ex + etama > px
+        ) {
+          gameOver = true;
+          ctx.beginPath();
+          ctx.font = "100px";
+          ctx.strokeStyle = "#edbb00";
+          ctx.strokeText("Eliminado!!", 125, 75);
+          ctx.stroke();
+        } else {
+          gameOver = false;
+        }
+
+        if (
+          py + 20 > yy &&
+          px + 20 > yx &&
+          py < yy + ytama &&
+          yx + ytama > px
+        ) {
+          gameOver = true;
+          ctx.beginPath();
+          ctx.font = "100px";
+          ctx.strokeStyle = "#edbb00";
+          ctx.strokeText("Eliminado!!", 125, 75);
+          ctx.stroke();
+        } else {
+          gameOver = false;
+        }
+        enemigo(
+          canvas.width,
+          canvas.height,
+          px,
+          py,
+          gameOver,
+          etama,
+          ewidth,
+          eheight,
+          ex,
+          ey
+        );
+        enemigo(
+          canvas.width,
+          canvas.height,
+          px,
+          py,
+          gameOver,
+          ytama,
+          ywidth,
+          yheight,
+          yx,
+          yy
+        );
+
+        ex++;
+        yx++
+        gameOver ? "" : requestAnimationFrame(animate);
+      }
+      animate();
+
+      });
+    </script>
   </body>
 </html>
