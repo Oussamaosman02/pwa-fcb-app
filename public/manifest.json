@@ -3,11 +3,11 @@
   "name": "Barcelona FC App",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "assets/logo.png",
       "type": "image/png",
       "sizes": "1024x1024"
     },{
-      "src": "log512.png",
+      "src": "assets/log512.png",
       "type": "image/png",
       "sizes": "512x512 256x256",
       "purpose": "maskable"
