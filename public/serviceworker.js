@@ -1,5 +1,5 @@
 const CACHE_NAME = "version1";
-const urlsToCache = ["index.html", "offline.html","assets/fcb.jpg"];
+const urlsToCache = ["index.html", "offline.html", "assets/fcb.jpg"];
 
 const self = this;
 
@@ -16,7 +16,9 @@ self.addEventListener("install", (e) => {
 self.addEventListener("fetch", (e) => {
   e.respondWith(
     caches.match(e.request).then(() => {
-      return fetch(e.request).catch(() => caches.match(["offline.html","assets/fcb.jpg"]));
+      return fetch(e.request).catch(() =>
+        caches.match(["offline.html", "assets/fcb.jpg"])
+      );
     })
   );
 });
@@ -32,7 +34,7 @@ self.addEventListener("activate", (e) => {
         cacheNames.map((cacheName) => {
           if (!cacheWhitelist.includes(cacheName)) {
             return caches.delete(cacheName);
-          } return ""
+          }
         })
       )
     )
