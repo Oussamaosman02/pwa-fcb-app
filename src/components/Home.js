@@ -62,7 +62,7 @@ export default function Home() {
       <Heading>We color football</Heading>
       <ThreeScene style={{zIndex: "10"}} />
     <Heading2>
-      Hace swipe up
+      Haz swipe up
     </Heading2>
     <Heading3>Pero no mucho!!</Heading3>
     </Contenedor>
