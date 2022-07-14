@@ -1,0 +1,11 @@
+Model Information:
+* title:	Escudo FCB
+* source:	https://sketchfab.com/3d-models/escudo-fcb-d97020bb0bf74ac48aee15093622a868
+* author:	CadForCam (https://sketchfab.com/yuelands)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Escudo FCB" (https://sketchfab.com/3d-models/escudo-fcb-d97020bb0bf74ac48aee15093622a868) by CadForCam (https://sketchfab.com/yuelands) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

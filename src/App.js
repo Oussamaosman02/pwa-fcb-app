@@ -2,19 +2,19 @@ import styled from "styled-components";
 import "./App.css";
 import React from "react";
 import Jugadores from "./jugadores.json";
+import {Link} from "react-router-dom"
 
 const Card = styled.div`
+  box-sizing: border-box;
   border-radius: 25px;
   text-align: center;
   background-color: whitesmoke;
-  padding: 1%;
-  width: 70vw;
+  width: 300px;
   position: relative;
-  left: 14.5vw;
   margin: 5vh 0;
   color: #a50044;
   background-image: url(https://wallpaperaccess.com/full/3802645.png);
-  box-shadow: 0px 0px 20px black;
+  box-shadow: 0px 0px 10px black;
 `;
 const Imagen = styled.img`
   width: 50%;
@@ -43,6 +43,19 @@ const Heading5 = styled.h5`
   font-weight: 900;
   padding: 1% 0;
 `;
+const Heading9 = styled.h5`
+  text-align: center;
+  text-decoration: none;
+  background-color: #a50044;
+  width: 10vw;
+  position: relative;
+  border-radius: 25px;
+  left:44vw;
+  box-shadow: 0 0 10px -5px #004d98;
+  color: #edbb00;
+  font-weight: 900;
+  padding: 1% 0;
+`;
 const Heading4 = styled.h4`
   text-align: center;
   background-color: #004d98;
@@ -65,7 +78,16 @@ function App() {
   let jugador = Jugadores;
   return (
     <div className="App">
-      <h1>Barcelona Players</h1>
+      <h1 style={{ width: "100%", color: "#edbb00" }}>Barcelona Players</h1>
+     <div style={{width:"100vw"}} >
+      <Heading9>
+     <Link to="/">
+        Back Home!
+
+     </Link>
+      </Heading9>
+     </div>
+      
       {jugador.map((j) => {
         return (
           <Card key={j.id}>
