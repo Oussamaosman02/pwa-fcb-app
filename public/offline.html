@@ -92,6 +92,7 @@
       button {
         margin: 0%;
         padding: 0%;
+        user-select: none;
         box-sizing: border-box;
         position: relative;
         border-style: none;
@@ -122,10 +123,10 @@
       <h2>Pulsa en la pantalla para jugar</h2>
       <canvas id="canvas"> </canvas>
       <div id="botones">
-        <button>^</button>
-        <button>></button>
-        <button>v</button>
-        <button><</button>
+        <button disabled ^</button>
+        <button disabled >></button>
+        <button disabled >v</button>
+        <button disabled ><</button>
       </div>
     </div>
     <script>
