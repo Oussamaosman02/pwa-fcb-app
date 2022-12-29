@@ -5,31 +5,23 @@
     "position": "Portero",
     "altura": "1,87",
     "peso": 85,
-    "foto": "https://www.fcbarcelona.com/photo-resources/2022/07/01/7788f3eb-6769-4e8c-9270-745b379ad9bf/ter_stegen.png?width=670&height=790"
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/041148f0-ed52-4375-940f-8201f3b5cde1/mini_01-MARC-ANDRE_TER_STEGEN.png?width=670&height=790"
   },
   {
-    "id": 13,
-    "name": "Neto",
+    "id": 26,
+    "name": "Iñaki Peña",
     "position": "Portero",
-    "altura": "1,90",
-    "peso": 84,
-    "foto": "https://assets.laliga.com/squad/2022/t178/p69752/2048x2225/p69752_t178_2022_0_001_000.png"
+    "altura": "1,84",
+    "peso": 78,
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/134d63de-a4e3-40f8-b689-4573125221cb/mini_26-INAKI_PENA.png?width=670&height=790"
   },
   {
     "id": 2,
-    "name": "Sergiño Dest",
+    "name": "Héctor Bellerín",
     "position": "Defensa",
-    "altura": "1,75",
-    "peso": 62,
-    "foto": "https://assets.laliga.com/squad/2022/t178/p250676/2048x2048/p250676_t178_2022_0_003_000.png"
-  },
-  {
-    "id": 3,
-    "name": "Piqué",
-    "position": "Defensa",
-    "altura": "1,94",
-    "peso": 85,
-    "foto": "https://www.fcbarcelona.com/photo-resources/2022/07/01/74a12d82-ffbb-443f-812a-14344ef974d5/pique.png?width=670&height=790"
+    "altura": "1,78",
+    "peso": 74,
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/6091bc0a-97e1-47ae-9157-110a99ff456d/mini_02-HECTOR_BELLERIN_.png?width=670&height=790"
   },
   {
     "id": 4,
@@ -37,7 +29,7 @@
     "position": "Defensa",
     "altura": "1,88",
     "peso": 79,
-    "foto": "https://assets.laliga.com/squad/2021/t178/p445087/2048x2048/p445087_t178_2021_1_003_000.png"
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/bf6cf0fc-9a19-49ed-972b-954b4f29562a/mini_04-RONALD_ARAUJO.png?width=670&height=790"
   },
   {
     "id": 18,
@@ -45,23 +37,23 @@
     "position": "Defensa",
     "altura": "1,70",
     "peso": 68,
-    "foto": "https://assets.laliga.com/squad/2021/t178/p52356/2048x2048/p52356_t178_2021_1_003_000.png"
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/15b4a419-cd0a-4278-b1b6-80b0b6df3517/mini_18-JORDI_ALBA.png?width=670&height=790"
   },
   {
-    "id": 22,
-    "name": "Mingueza",
+    "id": 17,
+    "name": "Marcos Alonso",
     "position": "Defensa",
-    "altura": "1,84",
-    "peso": 75,
-    "foto": "https://assets.laliga.com/squad/2022/t178/p242313/512x512/p242313_t178_2022_0_003_000.png"
+    "altura": "1,88",
+    "peso": 84,
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/ec6ed80a-44b5-4cbb-a382-400958b5cafa/mini_17-MARCOS_ALONSO.png?width=670&height=790"
   },
   {
     "id": 23,
-    "name": "Umtiti",
+    "name": "Koundé",
     "position": "Defensa",
-    "altura": "1,82",
+    "altura": "1,80",
     "peso": 75,
-    "foto": "https://www.fcbarcelona.com/photo-resources/2022/07/01/f702381b-d8c4-42d4-a4f9-f00d6d45b0d5/umtiti.png?width=670&height=790"
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/0318a5d5-1cf4-44ce-832f-8c5160738c9f/mini_23-JULES_KOUNDE.png?width=670&height=790"
   },
   {
     "id": 24,
@@ -69,15 +61,15 @@
     "position": "Defensa",
     "altura": "1,82",
     "peso": 76,
-    "foto": "https://assets.laliga.com/squad/2022/t178/p432656/1024x1024/p432656_t178_2022_0_003_000.png"
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/7224c1c5-fb7c-4276-b4e5-6b941ba525be/mini_24-ERIC_GARCIA.png?width=670&height=790"
   },
   {
-    "id": 98,
+    "id": 15,
     "name": "Christensen",
     "position": "Defensa",
     "altura": "1,87",
     "peso": 82,
-    "foto": "https://www.fcbarcelona.com/photo-resources/2022/07/12/d57dea25-70aa-4f67-be5c-99a1187bc231/christensen-copia.png?width=670&height=790"
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/ab61c1e5-7b11-4528-bb2a-f9660b74f276/mini_15-ANDREAS_CHRISTENSEN.png?width=670&height=790"
   },
   {
     "id": 5,
@@ -85,15 +77,7 @@
     "position": "Cetrocampista",
     "altura": "1,89",
     "peso": 76,
-    "foto": "https://assets.laliga.com/squad/2022/t178/p54104/2048x2225/p54104_t178_2022_0_001_000.png"
-  },
-  {
-    "id": 6,
-    "name": "Riqui Puig",
-    "position": "Centrocampista",
-    "altura": "1,69",
-    "peso": 56,
-    "foto": "https://assets.laliga.com/squad/2021/t178/p437765/2048x2225/p437765_t178_2021_1_001_000.png"
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/f77b1b0a-503c-4ef7-953b-d58555324cb6/mini_05-SERGIO.png?width=670&height=790"
   },
   {
     "id": 8,
@@ -101,15 +85,15 @@
     "position": "Centrocampista",
     "altura": "1,74",
     "peso": 60,
-    "foto": "https://assets.laliga.com/squad/2022/t178/p490541/1024x1113/p490541_t178_2022_0_001_000.png"
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/b6748d23-c5f6-47d2-8cc2-9fcebff5e0a1/mini_08-PEDRI.png?width=670&height=790"
   },
   {
-    "id": 14,
-    "name": "Nico Gonzalez",
+    "id": 30,
+    "name": "Gavi",
     "position": "Centrocampista",
-    "altura": "1,88",
-    "peso": 85,
-    "foto": "https://assets.laliga.com/squad/2022/t178/p465694/1024x1024/p465694_t178_2022_0_003_000.png"
+    "altura": "1,73",
+    "peso": 70,
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/ffeb9318-5479-4648-9fd5-a7486db80937/mini_30-GAVI.png?width=670&height=790"
   },
   {
     "id": 20,
@@ -117,7 +101,7 @@
     "position": "Centrocampista",
     "altura": "1,78",
     "peso": 68,
-    "foto": "https://www.fcbarcelona.com/photo-resources/2021/08/17/1685a19f-33d2-46c0-9ef6-77490e70be18/mini_20-SERGI-ROBERTO-1A-EQUIPACIO-003.png?width=670&height=790"
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/d938f9b5-cbb0-4886-a12d-663334f1edf7/mini_20-S_ROBERTO.png?width=670&height=790"
   },
   {
     "id": 21,
@@ -125,23 +109,23 @@
     "position": "Centrocampista",
     "altura": "1,80",
     "peso": 74,
-    "foto": "https://www.fcbarcelona.com/photo-resources/2022/07/01/1c44f8dd-2de6-4f10-9f5b-2d3b93c62f5b/frenkie.png?width=670&height=790"
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/8334632e-133c-4937-9c72-42a623860110/mini_21-FRENKIE_DE_JONG.png?width=670&height=790"
   },
   {
-    "id": 97,
+    "id": 19,
     "name": "Kessié",
     "position": "Centrocampista",
     "altura": "1,83",
     "peso": 74,
-    "foto": "https://www.fcbarcelona.com/photo-resources/2022/07/07/d7319120-a654-422f-8d87-52ab2edd00c7/kessie.png?width=670&height=790"
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/676f52d0-08be-489a-8443-c421a580528f/mini_19-FRANCK_KESSIE.png?width=670&height=790"
   },
   {
-    "id": 9,
+    "id": 14,
     "name": "Depay",
     "position": "Delantero",
     "altura": "1,76",
     "peso": 78,
-    "foto": "https://www.fcbarcelona.com/photo-resources/2022/07/01/24e0301b-0903-44c0-9b30-cda2a221e553/memphis.png?width=670&height=790"
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/14cb9250-d1da-40b4-9629-5f95963b0683/mini_14-MEMPHIS_DEPAY.png?width=670&height=790"
   },
   {
     "id": 10,
@@ -149,38 +133,38 @@
     "position": "Delantero",
     "altura": "1,78",
     "peso": 66,
-    "foto": "https://www.fcbarcelona.com/photo-resources/2022/07/01/cff6ca6e-635a-4208-9ddb-19f55fd1ee53/ansu.png?width=670&height=790"
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/1fd90800-29b1-471c-8859-06413b355e9e/mini_10-ANSU_FATI.png?width=670&height=790"
   },
   {
-    "id": 12,
-    "name": "Braithwate",
+    "id": 7,
+    "name": "Dembélé",
     "position": "Delantero",
-    "altura": "1,77",
-    "peso": 73,
-    "foto": "https://telegra.ph/file/d21f88f58a624dfce022a.png"
+    "altura": "1,78",
+    "peso": 67,
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/bc8fc008-858c-4df2-851a-a7deb546a4d7/mini_07-OUSMANE_DEMBELE.png?width=670&height=790"
   },
   {
-    "id": 19,
+    "id": 11,
     "name": "Ferran Torres",
     "position": "Delantero",
     "altura": "1,84",
     "peso": 77,
-    "foto": "https://www.fcbarcelona.com/photo-resources/2022/07/01/5bc2d0c9-3de0-4c56-832d-9e40abfb0ed3/ferrann-torres.png?width=670&height=790"
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/3a51e175-6618-42ca-b62a-3615b23ad3f9/mini_11-FERRAN_TORRES.png?width=670&height=790"
   },
   {
-    "id": 25,
-    "name": "Abuameyang",
+    "id": 9,
+    "name": "Lewandowski",
     "position": "Delantero",
-    "altura": "1,87",
-    "peso": 80,
-    "foto": "https://www.fcbarcelona.com/photo-resources/2022/07/01/ddc978ef-d60b-4951-8cec-2f75498d4a64/auba.png?width=670&height=790"
+    "altura": "1,85",
+    "peso": 81,
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/9b93a4c7-2ec5-4409-b08e-e551b1c983df/mini_09-ROBERT_LEWANDOWSKI.png?width=670&height=790"
   },
   {
-    "id": 99,
-    "name": "Addama",
+    "id": 22,
+    "name": "Raphina",
     "position": "Delantero",
-    "altura": "1,78",
-    "peso": 86,
-    "foto": "https://www.fcbarcelona.com/photo-resources/2022/03/02/58f633d0-d1eb-40d7-9c74-126e3db8f52d/ADAMA-PNG.png?width=670&height=790"
+    "altura": "1,76",
+    "peso": 68,
+    "foto": "https://www.fcbarcelona.com/photo-resources/2022/11/02/a82e5b51-cf1d-48ca-872f-753ab665386a/mini_22-RAPHINHA.png?width=670&height=790"
   }
 ]

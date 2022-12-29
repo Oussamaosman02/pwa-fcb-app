@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const Contenedor = styled.div`
   position: relative;
-  width: 100vw;
+  max-width: 100vw;
   height: 110vh;
   padding: 0;
   margin: 0;
